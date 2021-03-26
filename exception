@@ -1,0 +1,20 @@
+package javaapplication9;
+import java.util.Scanner;
+import java.util.InputMismatchException;
+public class JavaApplication9 {
+    public static void main(String[] args) {
+        Scanner input=new Scanner(System.in);
+        int x,y,z;
+        try{
+       x=input.nextInt();
+       y=input.nextInt();
+       z=x+y;
+       System.out.println(z);
+        }
+        catch(InputMismatchException ex){
+            System.out.println("there is an error");
+        }
+       
+    }
+    
+}
