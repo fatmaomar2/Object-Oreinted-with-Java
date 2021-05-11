@@ -1,0 +1,57 @@
+# Object-Oreinted-with-Java
+import javafx.application.Application;
+ import javafx.scene.Scene;
+ import javafx.scene.layout.Pane;
+ import javafx.scene.paint.Color;
+ import javafx.scene.shape.Rectangle;
+ import javafx.stage.Stage;
+public class ShowCircle extends Application {
+ @Override 
+public void start(Stage primaryStage) {
+ Rectangle rectangle = new Rectangle();
+ rectangle.setHeight(90);
+ rectangle.setWidth(200);
+ rectangle.setArcHeight(20);
+ rectangle.setArcWidth(20);
+ rectangle.setStroke(Color.BLACK);
+ rectangle.setFill(Color.WHITE);
+  Rectangle rectangle2 = new Rectangle();
+ rectangle2.setHeight(80);
+ rectangle2.setWidth(190);
+ rectangle2.setArcHeight(25);
+ rectangle2.setArcWidth(25);
+ rectangle2.setStroke(Color.BLACK);
+ rectangle2.setFill(Color.WHITE);
+  Rectangle rectangle3 = new Rectangle();
+ rectangle3.setHeight(70);
+ rectangle3.setWidth(180);
+ rectangle3.setArcHeight(30);
+ rectangle3.setArcWidth(30);
+ rectangle3.setStroke(Color.BLACK);
+ rectangle3.setFill(Color.WHITE);
+ Rectangle rectangle4 = new Rectangle();
+
+ rectangle4.setHeight(60);
+ rectangle4.setWidth(170);
+ rectangle4.setArcHeight(35);
+ rectangle4.setArcWidth(35);
+ rectangle4.setStroke(Color.BLACK);
+ rectangle4.setFill(Color.WHITE);
+ Pane pane = new Pane();{
+   pane.getChildren().add(rectangle);
+   pane.getChildren().add(rectangle2);
+   pane.getChildren().add(rectangle3);
+   pane.getChildren().add(rectangle4);
+ 
+ Scene scene = new Scene(pane, 200, 200);
+ primaryStage.setTitle("ShowRectangle"); 
+ primaryStage.setScene(scene); 
+ primaryStage.show();
+}
+ 
+}
+
+ public static void main(String[] args) {
+launch(args);
+}
+}
